@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.header {
+    height: 30%;
+    width: 100%;
+    position: relative;
+}
+
+.img_coverHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-size: cover; */
+}
+
+.showdown_bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56, 75, 94);
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 5px 35x 0;
+    z-index: 1;
+}
+
+.menu .logo_container {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_container img {
+    width: 100px;
+}
+
+.menu ul {
+    display: flex;
+    width: 30%;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+.header_title {
+    width: 800px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+
+.header_title h2 {
+    color: whitesmoke;
+    font-family: "Courier New", Courier, monospace;
+    width: fit-content;
+}
+
+.title {
+    margin-top: 5%;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    left: 100px;
+}
+
+.title h3 {
+    color: whitesmoke;
+    width: fit-content;
+}
+.title-tntn {
+
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    left: 100px;
+}
+.title-tntn h3 {
+    color: whitesmoke;
+    width: fit-content;
+}
+.header_button_container {
+    margin-top: 20px;
+    display: flex;
+    width: 400px;
+}.club-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.club {
+    margin-bottom: 2%;
+    text-decoration: none;
+    padding-bottom: 2%;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.club:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.club img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.club p {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgb(56, 75, 94);
+    color: white;
+}
+.club span{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.club:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer h1{
+    margin-bottom: 15px;
+}
+ /* __________________________________ */
+
+.box{
+    height: 50px ;
+    width: 150px;
+}
+.activites{
+    display: block;
+    background-color: antiquewhite;
+    /* position: relative; */
+    margin-top: 10px;
+    height: 1300px;
+    width: 100%;
+    z-index: -999;
+}
+.pic1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 850px;
+    height: 250px;
+    background: rgb(238, 173, 100);
+    padding: 15px;
+    gap: 20px; /* Tạo khoảng cách giữa ảnh và chữ */
+    transition: 2s;
+    z-index: 2;
+}
+
+.inner {
+    width: 300px; /* Giảm kích thước ảnh để tránh đè lên chữ */
+    height: auto;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.word {
+    flex: 1; /* Để phần chữ chiếm hết khoảng trống còn lại */
+    width: 305px;
+    text-align: left;
+}
+
+.word h2 {
+    text-align: center;
+}
+
+.inner:hover {
+    width: 320px; /* Hiệu ứng khi hover */
+}
+
+.pic1:hover {
+    transform: scale(1.05);
+}
+.pic2 {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: 1%;
+    width: 850px;
+    height: 250px;
+    background: rgb(238, 173, 100);
+    gap: 20px; /* Tạo khoảng cách giữa ảnh và chữ */
+    transition: 2s;
+    z-index: 2;
+    padding: 20px; /* Tạo khoảng trống bên trong */
+}
+
+.inner2 {
+    width: 300px; /* Giảm kích thước ảnh */
+    height: auto;
+    object-fit: cover;
+    transition: 0.8s;
+    flex-shrink: 0; /* Tránh ảnh bị thu nhỏ */
+}
+
+.word2 {
+    flex: 1; /* Để phần chữ chiếm hết khoảng trống còn lại */
+    text-align: left;
+    color: black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.inner2:hover {
+    width: 270px;   
+}
+
+.pic2:hover {
+    transform: scale(1.05);
+}
